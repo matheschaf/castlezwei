@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MR MATHE</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.6.2/dat.gui.min.js"></script>
+        <script src="https://assets.babylonjs.com/generated/Assets.js"></script>
+        
+        <link rel="stylesheet" href="castle_styles.css"> <!-- Link zu deiner CSS-Datei -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.babylonjs.com/babylon.js"></script> <!-- Babylon.js Bibliothek -->
+        
+    </head>
+    <body>
+        <section id="impressum">
+            <p id="castle-impressum">Impressum: Verantwortlich für den Inhalt dieser Webseite: 
+            Michael Romahn, Sollnitzer Str.1, 06785 Oranienbaum-Wörlitz, Deutschland, Telefon: +49 15773301560, E-Mail: <a href="mailto:miro@matheschaf.de">miro@matheschaf.de</a>
+            </p>
+        </section>
+    
+        
+    <div id="toggleSectionContainer">
+        <p>Dieser Bereich kann ein- und ausgeblendet werden.</p>
+    </div>
+</head>
+<body>
+   
+    <label for="brickColor">Wähle die Farbe der Steine:</label>
+    <input type="color" id="brickColor" name="brickColor" value="#8B4513">
+    <label for="inputText">Gib deinen Text ein (max. 20 Buchstaben):</label>
+    <input type="text" id="inputText" maxlength="20">
+    <button onclick="addBrick()">Füge einen Stein hinzu</button>
+    <canvas id="renderCanvas" style="width: 100%; height: 800px;"></canvas>
+    <button id="toggleButton"><img src="textures/toggle.png" id="topic"></button>
+
+    
+</body>
+<script src="castle_script.js"></script>
+</html>

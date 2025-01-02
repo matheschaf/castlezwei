@@ -1,0 +1,10 @@
+git branch -M main
+git remote add origin https://github.com/matheschaf/castle.git
+git push -u origin main
+
+
+X-Achse: Rot
+
+Y-Achse: Grün
+
+Z-Achse: Blau

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MR MATHE</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.6.2/dat.gui.min.js"></script>
+    <script src="https://assets.babylonjs.com/generated/Assets.js"></script>
+    
+    <link rel="stylesheet" href="castle_styles.css"> <!-- Link zu deiner CSS-Datei -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.babylonjs.com/babylon.js"></script> <!-- Babylon.js Bibliothek -->
+    <script src="castle_script.js" defer></script> <!-- Link zu deiner JavaScript-Datei -->
+</head>
+<body>
+    <section id="impressum">
+        <p id="castle-impressum">Impressum: Verantwortlich für den Inhalt dieser Webseite: 
+        Michael Romahn, Sollnitzer Str.1, 06785 Oranienbaum-Wörlitz, Deutschland, Telefon: +49 15773301560, E-Mail: <a href="mailto:miro@matheschaf.de">miro@matheschaf.de</a>
+        </p>
+    </section>
+
+    
+<div id="toggleSectionContainer">
+    <p>Dieser Bereich kann ein- und ausgeblendet werden.</p>
+</div>
+<main>
+        
+        <!-- Der Bereich für das Babylon.js-Canvas -->
+        <canvas id="renderCanvas" style="width: 100%; height:80vh;"></canvas>
+        <button id="toggleButton"><img src="toggle.png" id="topic"></button>
+        <div id="buttonContainer">
+            <button class="controlButton" id="button1"><img src="textures/go.png" class="buimg"></button>
+            <button class="controlButton" id="button2">2</button>
+            <button class="controlButton" id="button3">3</button>
+        </div>
+
+
+        <nav>
+            <ul>
+                <li><a href="#home">Startseite</a></li>
+                <li><a href="#about">Über uns</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+        <section id="home">
+            <h2>Startseite</h2>
+            <p>Dies ist der Startseiten-Bereich.</p>
+        </section>
+        <section id="about">
+            <h2>Über uns</h2>
+            <p>Dies ist der Über uns-Bereich.</p>
+        </section>
+        <section id="contact">
+            <h2>Kontakt</h2>
+            <p>Dies ist der Kontakt-Bereich.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Meine Webseite</p>
+    </footer>
+</body>
+</html>

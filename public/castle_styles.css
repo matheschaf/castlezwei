@@ -1,0 +1,58 @@
+
+html, body {
+    overflow: scroll;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+#renderCanvas {
+    width: 100%;
+    height: 100%;
+    touch-action: none;
+}
+
+#castle-impressum{
+    font-family:verdana;
+    font-size:12px;
+}
+
+/* Container für den toggelbaren Bereich */
+#toggleSectionContainer {
+    width: 50%;
+    margin: 0 auto; /* Zentriert den Container */
+    display: none; /* Standardmäßig ausgeblendet */
+    height: 50vh;
+    position: absolute;
+    top: 55px;
+    right: 5px;
+    background-color: rgba(128, 128, 128, 0.5); /* Grau und halbtransparent */
+    z-index:1;
+}
+
+/* Optional: Stil des Toggleschalters */
+#toggleButton {
+    margin: 0px 0px;
+    padding: 0px 0px;
+    background-color: #ffffff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index:2;
+    width:32px;
+}
+#topic{
+    width:32px;
+}
+.buimg{
+    width:32px;
+
+}
+.controlButton{
+    margin:0px;
+    padding:0px;
+    width:40px;
+}
